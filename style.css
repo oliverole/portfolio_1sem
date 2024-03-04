@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'h1';
+  src: url('fonts/Franklin\ Gothic\ Demi\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'h2';
+  src: url('fonts/Dubai-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bodytext'; /* This is the font for body text */
+  src: url('fonts/Caladea-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'button-text';
+  src: url('fonts/DoppioOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+:root {
+
+  /* Farver */
+
+    --white: #f9f9f9;
+    --black: #100e0eeb;
+    --red: #8A0707;
+
+}
+
+/* Burgermenu */
+
+header {
+  background-color: #f9f9f9;
+}
+
+li  {
+  list-style: none;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color:#100e0ef8;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #8A0707;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      gap: 0;
+      flex-direction: column;
+      background-color:#100e0e;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+  
+}
+
+  .nav-item {
+      margin: 16px 0;
+  }
+
+  .nav-menu.active {
+      left: 0;
+
+  }
+
+}
+
+/* Burgermenu slut */
+
+body {
+  background-color: var(--white);
+  padding: 2rem;
+  margin: 1rem;
+  
+}
+
+h1 {
+  font-family: 'h1';
+  font-size: 32px;
+  
+}
+
+h2 {
+  font-family: 'h2';
+  font-size: 24px;
+  
+}
+
+p {
+  font-family: 'bodytext';
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 15px;
+
+}
+
+header {
+  font-family: 'button-text';
+  font-size: 16px;
+}
+
+/* Knapper */
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: var(--red);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #100e0edf;
+  
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Knapper slut */

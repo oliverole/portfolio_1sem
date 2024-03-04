@@ -1,0 +1,332 @@
+.moodboard-styletile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+body {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+h1 {
+    padding: 2rem;
+}
+
+.image-container img {
+    width: 85%;
+    margin: 2rem;
+    margin-top: 10px;
+}
+
+.temah2, .cv {
+    text-align: center;
+    
+}
+
+.cv {
+  width: 75%;
+  margin-top: -10px;
+}
+
+.temabillede {
+  width: 80%;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.tema-p {
+  margin-top: 10px;
+}
+
+.temah1 {
+  text-align: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box4 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  background-color: #100e0edf;
+  color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.project-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    background-color: #100e0edf;
+    color: white;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+  .project-box p {
+    line-height: 1.6;
+    font-family: bodytext;
+  }
+
+  .tema-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+   }
+
+/* CV */
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+
+
+  .profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    
+  }
+  
+  .info-box {
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+  }
+
+  .info-box-udd {
+    
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    
+    
+  }
+
+  .info-box-arbejde {
+    
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+/* CV SLUT */
+
+footer {
+  background-color: var(--black);
+  padding: 0;
+  box-sizing: border-box;
+  margin: -50px;
+  margin-top: 4rem;
+}
+
+.footerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+footer h3, p {
+  color: white;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials img {
+  width: 70%;
+}
+
+@media screen and (min-width: 800px) {
+
+    footer {
+        background-color: var(--black);
+        padding: 20px 40px;
+        margin-top: 5rem;
+    }
+    
+    .footerdiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer h3, p {
+        color: white;
+    }
+    
+    .footer-logo img {
+        width: 300px;
+    }
+
+/* Temaopgaver */
+
+.project-box {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    background-color: #100e0edf;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+
+  .project-box4 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    background-color: #100e0edf;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+
+  .project-box p {
+    line-height: 1.6;
+    font-family: bodytext;
+  }
+
+  .tema-container {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+/* Temaopgaver slut */
+
+/* CV */
+
+.cv-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+
+
+  .profile-pic {
+    
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  .info-box {
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .info-box-udd {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+  }
+
+  .info-box-arbejde {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #100e0edf;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+/* CV SLUT */
+
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -30px;
+}
+
+.image-container2 img {
+    width: 80%;
+}
+
+.cv-image {
+    width: 50%;
+    margin: 2rem;
+}
+
+.image-container img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-container2 img {
+  width: 90%;
+  
+}
+
+.introtema {
+  text-align: center;
+}
+
+.introh1 {
+    margin: 10px;
+    max-width: 850px;
+    margin-top: -30px;
+       
+}
+
+.logo {
+  width: 100px;
+}
+
+}
